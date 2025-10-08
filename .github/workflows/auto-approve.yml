@@ -13,3 +13,5 @@ jobs:
       - uses: hmarr/auto-approve-action@v4
         with:
             github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Check workflow actor
+        run: echo "Workflow actor is ${{ github.actor }}"
